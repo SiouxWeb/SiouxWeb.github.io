@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            width: 600px;
+            height: auto;
+        }
+        section img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+        }
+        section img:hover{
+        cursor: crosshair;       
+        width: 50%;
+        height: auto;
+        opacity: 1;
+        filter: contrast(120%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Galería de imágenes</h1>
+    <section>
+        <img src="imagenes\imagen1.jpg" alt="">
+        <img src="imagenes\imagen2.jpg" alt="">
+        <img src="imagenes\imagen3.jpg" alt="">
+        <img src="imagenes\imagen4.jpg" alt="">
+        <img src="imagenes\imagen5.jpg" alt="">
+        <img src="imagenes\imagen6.jpg" alt="">
+    </section>
+    
+</body>
+</html>
